@@ -35,14 +35,14 @@ describe('window.LOL.filterByType', () => {
 })
 
 describe('window.LOL.filterByType', () => {
-  it('debería devolver "Bulbasaur" al hacer click en "Poison', () => {
-    window.assert.equal(window.LOL.filterByType(window.LOL.data, "Poison")[0].name, "Bulbasaur")
+  it('debería devolver "Bulbasaur" al hacer click en "Assassin', () => {
+    window.assert.equal(window.LOL.filterByType(window.LOL.data, "Assassin")[0].name, "Ahri")
   })
 })
 
 describe('window.LOL.filterByType', () => {
-  it('debería devolver "Bulbasaur" al hacer click en "Grass', () => {
-    window.assert.equal(window.LOL.filterByType(window.LOL.data, "Grass")[0].name, "Bulbasaur")
+  it('debería devolver "Bulbasaur" al hacer click en "Fighter', () => {
+    window.assert.equal(window.LOL.filterByType(window.LOL.data, "Fighter")[0].name, "Aatrox")
   })
 })
 });
