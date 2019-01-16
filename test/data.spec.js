@@ -52,13 +52,13 @@ describe('window.LOL.sortData', () => {
     window.assert.equal(typeof window.LOL.sortData, 'function' );
   })
 
-  it ('deberia devolver los pokemones ordenados de la A a la Z', () =>{
+  it ('deberia devolver los champion ordenados de la A a la Z', () =>{
     let orderAz = window.LOL.sortData(window.LOL.data,"name", true)
-    window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Abra", "Aerodactyl", "Alakazam"])
+    window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Aatrox", "Akali", "Alistar"])
   })
 
   it ('deberia devolver los pokemones ordenados de la Z a la A', () =>{
     let orderAz = window.LOL.sortData(window.LOL.data,"name", false)
-    window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Zubat", "Zapdos", "Wigglytuff"])
+    window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Zyra", "Zilean", "Ziggs"])
   })
 });
