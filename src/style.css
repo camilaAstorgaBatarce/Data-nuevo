@@ -1,0 +1,23 @@
+
+.banner {
+    background: #121212;
+    /* border-bottom: 5px solid #262626; */
+    color: #ffffff;
+}
+
+.titleBanner{
+    text-align: left;
+    font-family: 'Lato', sans-serif black;
+    color: #063375;
+    margin:0;
+}
+
+.logo-lol{
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.champion-box{
+    height: 100%;
+}

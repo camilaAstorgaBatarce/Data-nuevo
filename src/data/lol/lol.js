@@ -584,7 +584,7 @@ const LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Blitzcrank.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcranck_0.jpg",
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg",
       blurb:
         "Zaun is a place where both magic and science have gone awry, and the unchecked nature of experimentation has taken its toll. However, Zaun's lenient restrictions allow their researchers and inventors the leeway to push the bounds of science at an ...",
       info: {
@@ -4951,7 +4951,7 @@ const LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/Singed.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Signed_0.jpg",
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg",
       blurb:
         "Singed descended from a long line of Zaun's revered chemists. Even in his youth, his talent for concocting potions far outstripped that of his peers, and he quickly distinguished himself from his less extraordinary chemist compatriots. It came as no ...",
       info: {
@@ -5367,7 +5367,7 @@ const LOL = {
       img:
         "https://www.masterypoints.com/assets/img/lol/champion_icons/TahmKench.png",
       splash:
-        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tamkench_0.jpg",
+        "http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tahmkench_0.jpg",
       blurb:
         "''The whole world's a river, and I'm its king.''<br>Tahm Kench travels Runeterra's waterways, feeding his insatiable appetite with the misery of the unsuspecting. The singularly charming gourmand savors every moment of his victims' suffering.  A deal ...",
       info: {

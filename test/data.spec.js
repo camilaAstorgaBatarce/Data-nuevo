@@ -20,45 +20,45 @@ require('../src/data.js');
 
 describe('window.LOL', () => {
   it('debería ser un objeto', () => {
-    window.assert.equal(typeof window.LOL, 'object' );
+    window.assert.equal(typeof window.dataLol, 'object' );
   })
 })
 
-describe('window.LOL.computeStats', () => {
+describe('window.data.computeStats', () => {
   it('debería ser una función', () => {
-    window.assert.equal(typeof window.LOL.computeStats, 'function');
+    window.assert.equal(typeof window.data.computeStats, 'function');
   })
 })
-describe('window.LOL.filterByType', () => {
+describe('window.data.filter', () => {
   it('debería ser una función', () => {
-    window.assert.equal(typeof window.LOL.filterByType, 'function' );
+    window.assert.equal(typeof window.data.filter, 'function' );
 })
 
-describe('window.LOL.filterByType', () => {
-  it('debería devolver "Bulbasaur" al hacer click en "Assassin', () => {
-    window.assert.equal(window.LOL.filterByType(window.LOL.data, "Assassin")[0].name, "Ahri")
+describe('window.data.filter', () => {
+  it('debería devolver "Ahri" al hacer click en "Assassin', () => {
+    window.assert.equal(window.data.filterByType(dataLol.data, "Assassin")[0].name, "Ahri")
   })
 })
 
-describe('window.LOL.filterByType', () => {
-  it('debería devolver "Bulbasaur" al hacer click en "Fighter', () => {
-    window.assert.equal(window.LOL.filterByType(window.LOL.data, "Fighter")[0].name, "Aatrox")
+describe('window.data.filter', () => {
+  it('debería devolver "Aatrox" al hacer click en "Fighter', () => {
+    window.assert.equal(window.data.filterByType(dataLol.data, "Fighter")[0].name, "Aatrox")
   })
 })
 });
 
-describe('window.LOL.sortData', () => {
+describe('window.data.sortData', () => {
   it('debería ser una función', () => {
     window.assert.equal(typeof window.LOL.sortData, 'function' );
   })
 
   it ('deberia devolver los champion ordenados de la A a la Z', () =>{
-    let orderAz = window.LOL.sortData(window.LOL.data,"name", true)
+    let orderAz = window.data.sortData(dataLol.data,"name", true)
     window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Aatrox", "Akali", "Alistar"])
   })
 
   it ('deberia devolver los pokemones ordenados de la Z a la A', () =>{
-    let orderAz = window.LOL.sortData(window.LOL.data,"name", false)
+    let orderAz = window.data.sortData(dataLolL.data,"name", false)
     window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Zyra", "Zilean", "Ziggs"])
   })
 });
