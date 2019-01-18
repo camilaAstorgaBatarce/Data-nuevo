@@ -1,23 +1,53 @@
 
-.banner {
-    background: #121212;
-    /* border-bottom: 5px solid #262626; */
-    color: #ffffff;
+body{
+    font-family: 'Noto Serif', serif;
+    font-size: 16px;
+    background: #000;
 }
-
-.titleBanner{
+h3 {
+    color: #c9aa71;
     text-align: left;
-    font-family: 'Lato', sans-serif black;
-    color: #063375;
     margin:0;
 }
 
-.logo-lol{
+.banner{
+    background: #121212;
+    border-bottom: 5px solid #262626;
+}
+
+.logo_lol{
     height: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#root {
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .champion-box{
-    height: 100%;
+    margin-bottom: 30px;
+}
+
+h4, h5{
+    text-align: center;
+}
+h5{
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+h4{
+    margin-top: 60px;
+    margin-bottom: 15px;
+    color: #fbd989;
+}
+select{
+    background-color: #151515;
+    background: linear-gradient(to bottom, #2f2f2f 0%, #000000 100%);
+    border: 1px solid #766e4c;
+    color: #dec58d;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    margin-top: 15px;
 }

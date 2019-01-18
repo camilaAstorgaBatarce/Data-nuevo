@@ -16,33 +16,32 @@ window.data={
     sortData: (data, sortBy, sortOrder) => {
         if(sortBy === 'name'){
             if (sortOrder === true){// ordena de forma ascendente
-                return data.sort((a, b) => {
-                    let x = a[sortBy].toLowerCase();
-                    let y = b[sortBy].toLowerCase();
+                return Array.prototype.slice.call(data).sort((a, b) => {
+                    let x = a[1][sortBy].toLowerCase();
+                    let y = b[1][sortBy].toLowerCase();
                     if (x < y) {
                         return -1;
                     } if (x > y) {
                         return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+            }else if(sortOrder === false) { // ordena de forma descendente
+                return Array.prototype.slice.call(data).sort((a, b) => {
+                    let x = a[1][sortBy].toLowerCase();
+                    let y = b[1][sortBy].toLowerCase();
+                    if (x < y) {
+                        return 1;
+                    } if (x > y) {
+                        return -1;
                     } else {
                         return 0;
                     }
                 });
             }
         }
-             else if(sortOrder === false) { // ordena de forma descendente
-                return data.slice().sort((a, b) => {
-                    let x = a[sortBy].toLowerCase();
-                    let y = b[sortBy].toLowerCase();
-                    if (x < y) {
-                        return 1;
-                    } if (x > y) {
-                        return -1;
-                    } else {
-                        return 0;
-                    }
-                });
-            }
-        },
+    },
 
 }
 
