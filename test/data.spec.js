@@ -36,13 +36,13 @@ describe('window.data.filter', () => {
 
 describe('window.data.filter', () => {
   it('debería devolver "Ahri" al hacer click en "Assassin', () => {
-    window.assert.equal(window.data.filterByType(dataLol.data, "Assassin")[0].name, "Ahri")
+    window.assert.equal(window.data.filterByType(window.dataLol, "Assassin")[0].name, "Ahri")
   })
 })
 
 describe('window.data.filter', () => {
   it('debería devolver "Aatrox" al hacer click en "Fighter', () => {
-    window.assert.equal(window.data.filterByType(dataLol.data, "Fighter")[0].name, "Aatrox")
+    window.assert.equal(window.data.filterByType(window.dataLol, "Fighter")[0].name, "Aatrox")
   })
 })
 });
@@ -53,12 +53,12 @@ describe('window.data.sortData', () => {
   })
 
   it ('deberia devolver los champion ordenados de la A a la Z', () =>{
-    let orderAz = window.data.sortData(dataLol.data,"name", true)
+    let orderAz = window.data.sortData(window.dataLol,"name", true)
     window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Aatrox", "Akali", "Alistar"])
   })
 
   it ('deberia devolver los pokemones ordenados de la Z a la A', () =>{
-    let orderAz = window.data.sortData(dataLolL.data,"name", false)
+    let orderAz = window.data.sortData(window.dataLol,"name", false)
     window.assert.deepEqual([orderAz[0].name, orderAz[1].name, orderAz[2].name],["Zyra", "Zilean", "Ziggs"])
   })
 });

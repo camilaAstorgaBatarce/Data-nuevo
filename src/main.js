@@ -1,6 +1,6 @@
 // window.onload = () => {
 
-    const dataLol = Object.entries(LOL.data);
+    const dataLol = Object.entries(window.LOL.data);
     let currentLol = dataLol; //esta variable contendra a todos los champion que se estan viendo al momento de filtrar u ordenar
 
 // traer los elementos filtrados de los tipos de champion y mostrarlos en el html
@@ -29,6 +29,8 @@
         let selectValue = document.getElementById('select').value;
         let filteredChamps = window.data.filter(dataLol, selectValue);
         fillWithchampion(filteredChamps);
+        // se selecciona defaultOption cada vez que se hace un filtro nuevo
+        document.getElementById('alphabeticalOrder').value = 'defaultOption';
             // return filteredData;
     })
 
